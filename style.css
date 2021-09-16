@@ -1,114 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&family=Satisfy&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
 body{
-background: url(./img/bg2.jpg) no-repeat center center/cover;
-height:100%;
-margin:8rem;
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat, repeat;
+    margin: 0;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
 
-}
-.container{
-display:flex;
-justify-content:space-around;
-margin-top:5rem;
-}
-.container h2{
-
-width: 20rem;
-font-family: Cursive;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 15px;
-text-align: center;
-color: #FFFFFF;
-}
-.container p{
-width: 20rem;
-font-family: Sarabun;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 1.2rem;
-text-align: center;
-color: #FFFFFF;
-}
 .searchform{
-display:flex;
-justify-content: center;
-margin-top:5rem;
-
+    display: flex;
+    
 }
- #Search{
- width:22rem;
- border-radius:2rem;
- height:2rem;
- margin-right:1rem;
- }
- #submitbutton{
-  width:7rem;
-  border-radius:1rem;
-  height:2.2rem;
-  background:#649290;
- }
- #submitbutton:hover{
- background:red;
- }
- #submitbutton:active{
- border-radius:50%;
- background:blue;
+input{
+    height: 51px;
+    width: 821px;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 43.5px;
+}
+button {
+    height: 51px;
+    width: 132px;
+    border: none;
+    outline: none;
+    border-radius: 43.5px;
+    font-size: 19px;
+    margin-left: 10px;
+    background: #649290;
+    color: white;
+}
 
- }
- .weather{
- display:flex;
- align-items:center;
- background:rgba(214, 214, 214, 0.4);
- padding:1rem;
- border-radius:3rem;
- margin-top:2rem;
- height:4rem;
-
- }
- .weather h3{
- display:flex;
- padding:1rem;
- color:black;
-
- }
- .weather h2{
-  display:flex;
-  align-items:center;
-  color:#fff;
-  }
-
-
- #main{
-  display:flex;
-  justify-content:center;
-  margin-top:5rem;
- }
- .attractions{
-  display:flex;
-  flex-direction:row;
-   justify-content:space-around;
-    margin-top:5rem;
-
- }
- .attractions-header{
- display:flex;
- justify-content:center
-
- }
- .places{
- display: flex;
- align-items: center;
- flex-direction: column;
- color:#fff;
- padding:1rem;
- width:20%;
- border-radius:2rem;
- background:rgba(76, 175, 80, 0.3);
-margin-bottom:2rem;
- }
-p{
-text-transform: uppercase;
+button:hover{
+    background:#6cb1ab;
+    transition:0.3s;
 }
 
 
+#main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.first-section {
+        opacity: 0;
+        display: block;
+        transition: opacity 2s ease-in;
+    }
+.second-section {
+        opacity: 0;
+        display: block;
+        transition: opacity 1s ease-in;
+    }
+
+.weather-box {
+    position: absolute;
+    width: 609px;
+    height: 186px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background: linear-gradient(
+        0deg, rgba(214, 214, 214, 0.4), rgba(214, 214, 214, 0.4)), #FFFFFF;
+    opacity: 0.38;
+    border-radius: 133px;
+    z-index: -1;    
+}
+
+
+.attractions-header {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+    margin-bottom: auto;
+    /* line-height: 45px; */
+    /* text-align: center; */
+    color: #000000;
+}
+
+
+.box{
+    display: flex;
+    height: 800px;
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    text-align: center;
+    /* margin-top: 222px; */
+}
+
+ .header h1{
+    position: absolute;
+    /* width: 582px; */
+    /* height: 86px; */
+    font-family: Satisfy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 104px;
+    text-align: center;
+    color: white;
+    margin-right: 1000px;
+}
+
+.header{
+    position: relative;
+    width: 1328px;
+    height: 86px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+   
+
+}
+.header p {
+    position: absolute;
+    /* width: 582px; */
+    /* height: 50px; */
+    margin-left: 746px;
+    /* margin-top: 80px; */
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.weather {
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather small {
+    margin-top: 70px;
+    margin-right: 80px;
+    margin-left: -191px;
+    color: white;
+    font-size: 36px;
+}
+.weather img {
+    width: 127px;
+    margin-top: 24px;
+}
+.weather p{
+   
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 65px;   
+}
+
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 50px;   
+    margin: auto;
+    margin-right: 80px;
+}
+#att{
+    
+    font-size: 15px;
+}
+
+.attractions {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.places {
+    background: #649290;
+    border-radius: 47px;
+    box-shadow: 0px 3px 22px -12px #000000;
+    opacity: 0.92;
+    width: 342px;
+    height: 406px;
+    margin: 20px;
+    padding: 40px 20px 20px 20px;
+    overflow-wrap: anywhere;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Name{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bookmark{
+    margin-bottom: 50px;
+}
+
+.address{
+    margin-bottom: -15px;
+    color: rgb(255, 255, 255);
+}
+
+footer{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}

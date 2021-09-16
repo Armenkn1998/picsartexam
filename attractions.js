@@ -15,8 +15,6 @@ async function getAttractionsByLocation(city) {
   addAttractionsToPage(respData.response.venues);
 }
 
-
-
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
@@ -75,7 +73,6 @@ function addAttractionsToPage(venues) {
     bookmarkButton.id = currentVenue.id;
     bookmarkButton.textContent = isVenueBookmarked ? '🖤' : '❤️';
 
-   
     att.innerHTML = `
     <h3 class="attractions-header">Top Attractions</h3>`;
     places.innerHTML = `
@@ -87,7 +84,7 @@ function addAttractionsToPage(venues) {
     <h4>${currentVenue.location.formattedAddress}</h4>
     `;
     places.appendChild(bookmarkButton);
-    
+
     attractions.appendChild(places);
     att.appendChild(attractions);
   }
