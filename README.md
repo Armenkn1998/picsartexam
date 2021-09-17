@@ -1,6 +1,6 @@
 # "ThisTime" City guide. 
 
-![Project Image](https://prnt.sc/1sjh87e)
+![Project Image](https://www.voxtours.com/wp-content/uploads/2018/10/London-Phone-Background-Light-Blue.jpg)
 
 
 
