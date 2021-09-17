@@ -18,7 +18,8 @@
 
 ## Description
 
-Creating ReadMe's for your Github repository can be tedious.  I hope this template can save you time and effort as well as provide you with some consistency across your projects.
+Weather forecasts for thousands of locations around the world and the best places to eat, drink, shop, or visit in any city in the world.
+Access over 75 million short tips from local experts.
 
 
 
