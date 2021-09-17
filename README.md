@@ -1,6 +1,6 @@
 # "ThisTime" City guide. 
 
-![Project Image](https://trello.com/1/cards/61360927689c7a4287617ebb/attachments/61362c5afa71397d867ca2b9/previews/61362c5cfa71397d867ca2d2/download/image.png)
+![Project Image](https://prnt.sc/1sjh87e)
 
 
 
